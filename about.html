@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - KindHeart</title>
+    <meta name="description" content="Learn more about KindHeart's mission, history, core values, and dedicated team fighting for social impact.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html" style="color: var(--color-primary);">
+                <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
+                <span>KindHeart</span>
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <!-- Theme Toggle -->
+                <button class="btn btn-link nav-link p-2" id="themeToggle" aria-label="Toggle theme">
+                    <i id="themeIcon" class="bi bi-moon-fill fs-5"></i>
+                </button>
+                <!-- RTL Toggle -->
+                <button class="btn btn-outline-secondary btn-sm" id="rtlToggle" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold;">RTL</button>
+                
+                <a href="login.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Login</a>
+                <a href="signup.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Sign Up</a>
+                
+                <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel" style="color: var(--color-primary);">KindHeart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item d-sm-none w-100 mt-3 text-center">
+                            <a href="login.html" class="btn btn-custom-primary w-100 mb-2">Login</a>
+                            <a href="signup.html" class="btn btn-custom-primary w-100">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 bg-light-subtle border-bottom">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold" style="color: var(--color-tertiary);">Who We Are</h1>
+            <p class="lead text-muted max-w-2xl mx-auto">Get to know the passionate hearts driving sustainable solutions for communities worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600" class="img-fluid rounded-4 shadow" alt="Volunteers packing food items">
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-uppercase fw-bold text-secondary" style="color: var(--color-secondary) !important;">Our Mission</span>
+                    <h2 class="fw-bold mb-3 mt-2" style="color: var(--color-tertiary);">Empowering Lives through Action</h2>
+                    <p class="text-muted mb-4">Founded with the core belief that access to clean water, basic education, and health support is a fundamental human right. We work to break cycles of poverty by installing local systems maintained directly by local communities.</p>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="fs-4 me-3 text-primary" style="color: var(--color-primary);"><i class="bi bi-bullseye"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Clear Goals</h5>
+                            <p class="text-muted small">Targeting actionable challenges to deliver measurable improvements on a year-by-year scale.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="fs-4 me-3 text-primary" style="color: var(--color-primary);"><i class="bi bi-people-fill"></i></div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Global Community</h5>
+                            <p class="text-muted small">Collaborating across continents with partners, local governments, and generous donors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline Section -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" style="color: var(--color-tertiary);">Our Milestone Journey</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="position-relative border-start border-2 border-primary ps-4 py-2" style="border-color: var(--color-primary) !important;">
+                        <div class="mb-4 position-relative">
+                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2022 - Setup & Foundation</h5>
+                            <p class="text-muted">A group of social volunteers launched the first medical and clean water camp, servicing 5 local villages.</p>
+                        </div>
+                        <div class="mb-4 position-relative">
+                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2024 - Global Recognition</h5>
+                            <p class="text-muted">Reached a milestone of $1M in verified donor funds. Established official partnerships with primary schools across two states.</p>
+                        </div>
+                        <div class="position-relative">
+                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2026 - Present Day Expansion</h5>
+                            <p class="text-muted">Currently servicing 150+ communities, with digital tracking dashboards for donors and transparent live data reporting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" style="color: var(--color-tertiary);">Our Core Values</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 bg-light-subtle h-100 shadow-sm custom-card">
+                        <div class="fs-1 mb-3" style="color: var(--color-primary);"><i class="bi bi-heart-fill"></i></div>
+                        <h4 class="fw-bold mb-3" style="color: var(--color-tertiary);">Compassion</h4>
+                        <p class="text-muted mb-0">We believe in empathy and kindness, ensuring every individual is treated with dignity and respect.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 bg-light-subtle h-100 shadow-sm custom-card">
+                        <div class="fs-1 mb-3" style="color: var(--color-primary);"><i class="bi bi-globe-americas"></i></div>
+                        <h4 class="fw-bold mb-3" style="color: var(--color-tertiary);">Inclusivity</h4>
+                        <p class="text-muted mb-0">Our programs are designed to reach marginalized communities globally, leaving no one behind.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 bg-light-subtle h-100 shadow-sm custom-card">
+                        <div class="fs-1 mb-3" style="color: var(--color-primary);"><i class="bi bi-shield-check"></i></div>
+                        <h4 class="fw-bold mb-3" style="color: var(--color-tertiary);">Integrity</h4>
+                        <p class="text-muted mb-0">We uphold the highest standards of transparency and accountability in all our operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Global Impact Section -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600" class="img-fluid rounded-4 shadow" alt="Children smiling and learning">
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-uppercase fw-bold text-secondary" style="color: var(--color-secondary) !important;">Our Impact</span>
+                    <h2 class="fw-bold mb-3 mt-2" style="color: var(--color-tertiary);">Making a Difference Every Day</h2>
+                    <p class="text-muted mb-4">Through the generous support of our donors and the relentless dedication of our volunteers, we have transformed thousands of lives across the globe. Our initiatives have brought clean water to drought-stricken regions and built schools where education was just a dream.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-6">
+                            <h3 class="fw-bold mb-1" style="color: var(--color-primary);">500k+</h3>
+                            <p class="text-muted small mb-0">Meals Distributed</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold mb-1" style="color: var(--color-primary);">150+</h3>
+                            <p class="text-muted small mb-0">Communities Helped</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold mb-1" style="color: var(--color-primary);">50+</h3>
+                            <p class="text-muted small mb-0">Schools Built</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold mb-1" style="color: var(--color-primary);">10k+</h3>
+                            <p class="text-muted small mb-0">Volunteers Worldwide</p>
+                        </div>
+                    </div>
+                    
+                    <a href="services.html" class="btn btn-custom-primary">Explore Our Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" style="color: var(--color-tertiary);">Meet the Directors</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card p-4">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=250" class="img-fluid rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; object-fit: cover; object-position: top;" alt="Jane Doe">
+                        <h5 class="fw-bold mb-1">Dr. Jane Doe</h5>
+                        <p class="text-secondary small mb-3" style="color: var(--color-secondary) !important;">Founder & Director</p>
+                        <p class="text-muted small">Pioneering community development programs with over 12 years of global humanitarian experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card p-4">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=250" class="img-fluid rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; object-fit: cover; object-position: top;" alt="John Smith">
+                        <h5 class="fw-bold mb-1">John Smith</h5>
+                        <p class="text-secondary small mb-3" style="color: var(--color-secondary) !important;">Operations Head</p>
+                        <p class="text-muted small">Managing project logistics and field distributions, ensuring resources reach the correct destinations safely.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 custom-card p-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=250" class="img-fluid rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; object-fit: cover; object-position: top;" alt="Sarah Lee">
+                        <h5 class="fw-bold mb-1">Sarah Lee</h5>
+                        <p class="text-secondary small mb-3" style="color: var(--color-secondary) !important;">Public Relations</p>
+                        <p class="text-muted small">Facilitating partnership communications, international media coverage, and building donor relations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center fw-bold mb-3" href="index.html" style="color: var(--color-primary);">
+                        <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
+                        <span class="text-white">KindHeart</span>
+                    </a>
+                    <p class="small text-white-50">Making the world a better place through community empowerment, global relief, and transparent action.</p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="social-icon-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon-btn twitter" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Our Programs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-white-50 text-decoration-none">Donor Login</a></li>
+                        <li class="mb-2"><a href="signup.html" class="text-white-50 text-decoration-none">Volunteer Signup</a></li>
+                        <li class="mb-2"><a href="dashboard.html" class="text-white-50 text-decoration-none">Impact Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Newsletter</h5>
+                    <p class="small text-white-50 mb-3">Subscribe to get monthly updates on our projects and stories.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-custom-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-white-50">
+                    &copy; 2026 KindHeart. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-white-50 text-decoration-none small">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-custom-primary btn-lg shadow" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
