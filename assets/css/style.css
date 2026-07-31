@@ -176,12 +176,52 @@
     border-color: #ffffff !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
     transition: background-color var(--transition-speed), color var(--transition-speed);
     overflow-x: hidden;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+.btn:focus-visible, .form-control:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(var(--color-primary-rgb), 0.25);
+    outline: none;
+}
+
+/* Custom Toast Notification */
+.custom-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: var(--color-primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-weight: 500;
+    z-index: 1050;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none;
+}
+.custom-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
 }
 
 /* Unified Buttons (Same style everywhere as per rule 2) */
@@ -257,13 +297,22 @@ body {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    display: none;
     z-index: 99;
     border-radius: 50%;
     width: 45px;
     height: 45px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#backToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 /* RTL Specific Overrides if dir="rtl" is set */
@@ -459,4 +508,32 @@ body {
 
 [data-bs-theme="dark"] .partner-card:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Ensure navbar fits exactly in single line on 1024px (lg breakpoint) without overflow */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-nav .nav-link {
+        padding-left: 0.3rem !important;
+        padding-right: 0.3rem !important;
+        font-size: 0.95rem;
+    }
+    .navbar .gap-2 {
+        gap: 0.25rem !important;
+    }
+    .navbar .btn-sm {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
+
+/* RTL Accordion Fixes */
+[dir="rtl"] .accordion-button {
+    padding-left: 3.5rem !important;
+    padding-right: 1.25rem !important;
+    text-align: right !important;
+}
+
+[dir="rtl"] .accordion-button::after {
+    margin-right: auto !important;
+    margin-left: 0 !important;
 }

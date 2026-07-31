@@ -18,20 +18,20 @@
     <!-- Header / Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html" style="color: var(--color-primary);">
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="index.html" style="color: var(--color-primary);">
                 <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
                 <span>KindHeart</span>
             </a>
             <div class="d-flex align-items-center order-lg-last gap-2">
                 <!-- Theme Toggle -->
-                <button class="btn btn-link nav-link p-2" id="themeToggle" aria-label="Toggle theme">
+                <button class="btn btn-outline-secondary btn-sm" id="themeToggle" aria-label="Toggle theme" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: inline-flex; align-items: center; justify-content: center;">
                     <i id="themeIcon" class="bi bi-moon-fill fs-5"></i>
                 </button>
                 <!-- RTL Toggle -->
                 <button class="btn btn-outline-secondary btn-sm" id="rtlToggle" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold;">RTL</button>
                 
-                <a href="login.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Login</a>
-                <a href="signup.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Sign Up</a>
+                <a href="login.html" class="btn btn-custom-primary btn-sm d-none d-lg-inline-block">Login</a>
+                <a href="signup.html" class="btn btn-custom-primary btn-sm d-none d-lg-inline-block text-nowrap">Sign Up</a>
                 
                 <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,10 +46,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home 1</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="home2.html">Home 2</a>
+                            <a class="nav-link text-nowrap" href="volunteer.html">Volunteer Hub</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="about.html">About</a>
@@ -66,7 +66,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="dashboard.html">Dashboard</a>
                         </li>
-                        <li class="nav-item d-sm-none w-100 mt-3 text-center">
+                        <li class="nav-item d-lg-none w-100 mt-3 text-center">
                             <a href="login.html" class="btn btn-custom-primary w-100 mb-2">Login</a>
                             <a href="signup.html" class="btn btn-custom-primary w-100">Sign Up</a>
                         </li>
@@ -77,10 +77,14 @@
     </nav>
 
     <!-- Header Section -->
-    <section class="py-5 bg-light-subtle border-bottom">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold" style="color: var(--color-tertiary);">Who We Are</h1>
-            <p class="lead text-muted max-w-2xl mx-auto">Get to know the passionate hearts driving sustainable solutions for communities worldwide.</p>
+    <section class="text-center position-relative d-flex align-items-center py-5 border-bottom" style="
+        min-height: 40vh;
+        background: url('assets/img/hero-about.png') center center / cover no-repeat;
+    ">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(160deg, rgba(10,40,35,0.78) 0%, rgba(15,118,110,0.62) 100%); z-index:0;"></div>
+        <div class="container position-relative text-white" style="z-index:1;">
+            <h1 class="display-4 fw-bold mb-3" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">Who We Are</h1>
+            <p class="lead text-white-50 max-w-2xl mx-auto" style="text-shadow: 0 1px 5px rgba(0,0,0,0.3);">Get to know the passionate hearts driving sustainable solutions for communities worldwide.</p>
         </div>
     </section>
 
@@ -124,17 +128,17 @@
                 <div class="col-lg-8">
                     <div class="position-relative border-start border-2 border-primary ps-4 py-2" style="border-color: var(--color-primary) !important;">
                         <div class="mb-4 position-relative">
-                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <span class="position-absolute translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -25px !important; top: 12px !important; background-color: var(--color-primary) !important;"></span>
                             <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2022 - Setup & Foundation</h5>
                             <p class="text-muted">A group of social volunteers launched the first medical and clean water camp, servicing 5 local villages.</p>
                         </div>
                         <div class="mb-4 position-relative">
-                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <span class="position-absolute translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -25px !important; top: 12px !important; background-color: var(--color-primary) !important;"></span>
                             <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2024 - Global Recognition</h5>
                             <p class="text-muted">Reached a milestone of $1M in verified donor funds. Established official partnerships with primary schools across two states.</p>
                         </div>
                         <div class="position-relative">
-                            <span class="position-absolute start-0 top-0 translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -33px !important; background-color: var(--color-primary) !important;"></span>
+                            <span class="position-absolute translate-middle bg-primary rounded-circle" style="width: 16px; height: 16px; left: -25px !important; top: 12px !important; background-color: var(--color-primary) !important;"></span>
                             <h5 class="fw-bold text-secondary" style="color: var(--color-secondary) !important;">2026 - Present Day Expansion</h5>
                             <p class="text-muted">Currently servicing 150+ communities, with digital tracking dashboards for donors and transparent live data reporting.</p>
                         </div>
@@ -249,16 +253,16 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <a class="navbar-brand d-flex align-items-center fw-bold mb-3" href="index.html" style="color: var(--color-primary);">
+                    <a class="navbar-brand d-flex align-items-center fw-bold fs-4 mb-3" href="index.html" style="color: var(--color-primary) !important;">
                         <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
-                        <span class="text-white">KindHeart</span>
+                        <span>KindHeart</span>
                     </a>
                     <p class="small text-white-50">Making the world a better place through community empowerment, global relief, and transparent action.</p>
                     <div class="d-flex gap-2 mt-3">
-                        <a href="#" class="social-icon-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon-btn twitter" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="social-icon-btn instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="javascript:void(0)" class="social-icon-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="javascript:void(0)" class="social-icon-btn twitter" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="javascript:void(0)" class="social-icon-btn instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="javascript:void(0)" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -294,7 +298,7 @@
                     &copy; 2026 KindHeart. All rights reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <a href="#" class="text-white-50 text-decoration-none small">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-white-50 text-decoration-none small">Privacy Policy</a>
                 </div>
             </div>
         </div>

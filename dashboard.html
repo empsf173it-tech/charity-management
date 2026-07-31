@@ -90,7 +90,7 @@
                         
                         <!-- Metric Cards -->
                         <div class="row g-3 mb-4">
-                            <div class="col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="card p-3 border shadow-sm">
                                     <div class="d-flex align-items-center">
                                         <div class="fs-2 text-primary me-3"><i class="bi bi-heart-pulse-fill"></i></div>
@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="card p-3 border shadow-sm">
                                     <div class="d-flex align-items-center">
                                         <div class="fs-2 text-success me-3"><i class="bi bi-cash-stack"></i></div>
@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="card p-3 border shadow-sm">
                                     <div class="d-flex align-items-center">
                                         <div class="fs-2 text-warning me-3"><i class="bi bi-people-fill"></i></div>
@@ -123,7 +123,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="card p-3 border shadow-sm">
                                     <div class="d-flex align-items-center">
                                         <div class="fs-2 text-danger me-3"><i class="bi bi-envelope-open-fill"></i></div>
@@ -212,7 +212,7 @@
                                         <th>Donor</th>
                                         <th>Campaign</th>
                                         <th>Amount</th>
-                                        <th>Date</th>
+                                        <th class="text-nowrap">Date</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -221,21 +221,21 @@
                                         <td>Emily Watson</td>
                                         <td>Clean Water Well #9</td>
                                         <td><strong>$500.00</strong></td>
-                                        <td>2026-07-28</td>
+                                        <td class="text-nowrap">2026-07-28</td>
                                     </tr>
                                     <tr>
                                         <td>#TX-8802</td>
                                         <td>David Miller</td>
                                         <td>Emergency Medical Care</td>
                                         <td><strong>$1,200.00</strong></td>
-                                        <td>2026-07-27</td>
+                                        <td class="text-nowrap">2026-07-27</td>
                                     </tr>
                                     <tr>
                                         <td>#TX-8803</td>
                                         <td>Sophia Chen</td>
                                         <td>Rural Education Fund</td>
                                         <td><strong>$150.00</strong></td>
-                                        <td>2026-07-25</td>
+                                        <td class="text-nowrap">2026-07-25</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -276,5 +276,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Auto-close sidebar on mobile after clicking a menu item -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.dashboard-nav-link');
+            const sidebarMenu = document.getElementById('sidebarMenu');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Check if sidebar is open (has 'show' class from Bootstrap collapse)
+                    if (sidebarMenu.classList.contains('show')) {
+                        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(sidebarMenu);
+                        if (bsCollapse) {
+                            bsCollapse.hide();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

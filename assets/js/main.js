@@ -69,9 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
-                backToTopBtn.style.display = 'flex';
+                backToTopBtn.classList.add('show');
             } else {
-                backToTopBtn.style.display = 'none';
+                backToTopBtn.classList.remove('show');
             }
         });
         
@@ -85,6 +85,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // === Form Validation simulation ===
     const forms = document.querySelectorAll('.needs-validation');
+    
+    // Create Toast Element
+    const toast = document.createElement('div');
+    toast.className = 'custom-toast';
+    toast.innerHTML = '<i class="bi bi-check-circle-fill"></i> Thank you! Your action has been successfully processed.';
+    document.body.appendChild(toast);
+
+    function showToast() {
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 4000);
+    }
+
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
             if (!form.checkValidity()) {
@@ -92,9 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.stopPropagation();
             } else {
                 event.preventDefault();
-                alert('Thank you! Your action has been successfully processed.');
+                showToast();
                 form.reset();
                 form.classList.remove('was-validated');
+                return;
             }
             form.classList.add('was-validated');
         }, false);

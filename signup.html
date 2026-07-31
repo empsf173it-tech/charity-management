@@ -27,7 +27,7 @@
     <!-- Signup Area -->
     <section class="py-5 bg-light-subtle min-vh-100 d-flex flex-column justify-content-center">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5 mt-md-0">
                 <div class="col-lg-6 col-md-8">
                     <div class="card p-4 p-md-5 custom-card">
                         <div class="text-center mb-4">
@@ -40,17 +40,15 @@
                         </div>
                         
                         <form class="needs-validation" novalidate>
-                            <div class="row g-3 mb-3">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="form-label fw-semibold">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" required placeholder="John">
-                                    <div class="invalid-feedback">First name is required.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="lastName" class="form-label fw-semibold">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" required placeholder="Doe">
-                                    <div class="invalid-feedback">Last name is required.</div>
-                                </div>
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label fw-semibold">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required placeholder="John">
+                                <div class="invalid-feedback">First name is required.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label fw-semibold">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required placeholder="Doe">
+                                <div class="invalid-feedback">Last name is required.</div>
                             </div>
                             <div class="mb-3">
                                 <label for="signupEmail" class="form-label fw-semibold">Email Address</label>
@@ -64,7 +62,7 @@
                             </div>
                             <div class="mb-4 form-check">
                                 <input type="checkbox" class="form-check-input" id="termsCheck" required>
-                                <label class="form-check-label text-muted small" for="termsCheck">I agree to the <a href="#" class="text-decoration-none" style="color: var(--color-primary);">Terms of Service</a> & Privacy Policy</label>
+                                <label class="form-check-label text-muted small" for="termsCheck">I agree to the <a href="javascript:void(0)" class="text-decoration-none" style="color: var(--color-primary);">Terms of Service</a> & Privacy Policy</label>
                                 <div class="invalid-feedback">You must agree before submitting.</div>
                             </div>
                             <button type="submit" class="btn btn-custom-primary w-100 mb-3">Create Account</button>
