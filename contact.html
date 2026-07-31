@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KindHeart</title>
+    <meta name="description" content="Reach out to KindHeart charity. Send us a message, locate our headquarters, or sign up as an event partner.">
+    <!-- Bootstrap 5 CSS -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html" style="color: var(--color-primary);">
+                <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
+                <span>KindHeart</span>
+            </a>
+            <div class="d-flex align-items-center order-lg-last gap-2">
+                <!-- Theme Toggle -->
+                <button class="btn btn-link nav-link p-2" id="themeToggle" aria-label="Toggle theme">
+                    <i id="themeIcon" class="bi bi-moon-fill fs-5"></i>
+                </button>
+                <!-- RTL Toggle -->
+                <button class="btn btn-outline-secondary btn-sm" id="rtlToggle" style="width: 40px; height: 40px; border-radius: 50%; padding: 0; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold;">RTL</button>
+                
+                <a href="login.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Login</a>
+                <a href="signup.html" class="btn btn-custom-primary btn-sm d-none d-sm-inline-block">Sign Up</a>
+                
+                <button class="navbar-toggler border-0 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel" style="color: var(--color-primary);">KindHeart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item d-sm-none w-100 mt-3 text-center">
+                            <a href="login.html" class="btn btn-custom-primary w-100 mb-2">Login</a>
+                            <a href="signup.html" class="btn btn-custom-primary w-100">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 bg-light-subtle border-bottom">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold" style="color: var(--color-tertiary);">Get In Touch</h1>
+            <p class="lead text-muted max-w-2xl mx-auto">Have questions about donation reports, volunteer opportunities, or partnering? Drop us a line.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                
+                <!-- Contact Details & Map (Left Column) -->
+                <div class="col-lg-5">
+                    <h3 class="fw-bold mb-4" style="color: var(--color-tertiary);">Contact Information</h3>
+                    <p class="text-muted mb-5">Fill out our messaging form or reach out through our official headquarters contacts. We will respond within 24 hours.</p>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="fs-4 me-3 text-primary d-flex align-items-center justify-content-center border rounded-circle bg-light-subtle" style="width: 50px; height: 50px; color: var(--color-primary); border-color: var(--border-color) !important;">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">HQ Address</h6>
+                            <p class="text-muted mb-0 small">123 Impact Plaza, Downtown Suite 40, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="fs-4 me-3 text-primary d-flex align-items-center justify-content-center border rounded-circle bg-light-subtle" style="width: 50px; height: 50px; color: var(--color-primary); border-color: var(--border-color) !important;">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Phone Number</h6>
+                            <p class="text-muted mb-0 small">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="fs-4 me-3 text-primary d-flex align-items-center justify-content-center border rounded-circle bg-light-subtle" style="width: 50px; height: 50px; color: var(--color-primary); border-color: var(--border-color) !important;">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Email Support</h6>
+                            <p class="text-muted mb-0 small">contact@kindheart.org</p>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Styled Map Placeholder -->
+                    <div class="rounded-4 overflow-hidden border" style="height: 250px; position: relative; border-color: var(--border-color) !important;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528082187!2d-74.1197637309995!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Contact Form (Right Column) -->
+                <div class="col-lg-7">
+                    <div class="p-4 p-md-5 custom-card">
+                        <h3 class="fw-bold mb-4" style="color: var(--color-tertiary);">Send a Message</h3>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="userName" class="form-label fw-semibold">Full Name</label>
+                                    <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="userEmail" class="form-label fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="msgSubject" class="form-label fw-semibold">Subject</label>
+                                    <input type="text" class="form-control" id="msgSubject" placeholder="How can we help?" required>
+                                    <div class="invalid-feedback">Please state a subject.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="userMessage" class="form-label fw-semibold">Message</label>
+                                    <textarea class="form-control" id="userMessage" rows="5" placeholder="Write details here..." required></textarea>
+                                    <div class="invalid-feedback">Please enter your message.</div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-custom-primary w-100">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center fw-bold mb-3" href="index.html" style="color: var(--color-primary);">
+                        <img src="assets/img/favicon.png" alt="KindHeart Logo" width="28" height="28" class="me-2">
+                        <span class="text-white">KindHeart</span>
+                    </a>
+                    <p class="small text-white-50">Making the world a better place through community empowerment, global relief, and transparent action.</p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="social-icon-btn facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon-btn twitter" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Our Programs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-white-50 text-decoration-none">Donor Login</a></li>
+                        <li class="mb-2"><a href="signup.html" class="text-white-50 text-decoration-none">Volunteer Signup</a></li>
+                        <li class="mb-2"><a href="dashboard.html" class="text-white-50 text-decoration-none">Impact Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-3">Newsletter</h5>
+                    <p class="small text-white-50 mb-3">Subscribe to get monthly updates on our projects and stories.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-custom-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-white-50">
+                    &copy; 2026 KindHeart. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-white-50 text-decoration-none small">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-custom-primary btn-lg shadow" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
